@@ -499,7 +499,7 @@ html[data-theme="dark"] .theme-toggle__moon {
 }
 
 .site-header {
-    position: fixed;
+    position: fixed !important;
     top: 0;
     right: 0;
     left: 0;
