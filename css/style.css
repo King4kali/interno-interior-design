@@ -79,7 +79,27 @@ html {
     scroll-behavior: smooth;
     background: var(--bg);
 }
+html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) transparent;
+}
 
+html::-webkit-scrollbar {
+    width: 4px;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: var(--accent);
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-bright);
+}
 body {
     margin: 0;
     min-width: 280px;
