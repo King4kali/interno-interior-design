@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Compare Interno's interior design packages, project scopes and starting investments for concept direction, signature rooms and full-service residences.">
+    <meta name="theme-color" content="#f8f6f1">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Project Packages & Pricing — Interno">
+    <meta property="og:description" content="Clear starting points for a considered interior design project.">
+    <meta property="og:image" content="img/og-interno.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Project Packages & Pricing — Interno</title>
+    <link rel="icon" type="image/png" href="img/Logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        const root = document.documentElement;
+        root.classList.add("js");
+        let motionEnabled = true;
+
+        try {
+            if (localStorage.getItem("interno-theme") === "dark") {
+                root.dataset.theme = "dark";
+            }
+            motionEnabled = localStorage.getItem("interno-motion") !== "off";
+        } catch {}
+
+        try {
+            if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+                motionEnabled = false;
+            }
+        } catch {}
+
+        root.dataset.motion = motionEnabled ? "on" : "off";
+    </script>
+    <script src="js/script.js?v=20260730-3" defer></script>
+</head>
+<body class="has-dark-hero" id="top">
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a class="brand" href="index.html" aria-label="Interno home">
+                <span class="brand__mark"><img src="img/Logo.png" width="34" height="34" alt=""></span>
+                <span>
+                    <span class="brand__name">Interno</span>
+                    <span class="brand__descriptor">Interior architecture</span>
+                </span>
+            </a>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">Studio</a>
+                <a href="services.html">Services</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="pricing.html" aria-current="page">Pricing</a>
+            </nav>
+            <div class="header-actions">
+                <button class="icon-button" type="button" data-open-search aria-label="Search site" title="Search (/)">⌕</button>
+                <button class="icon-button" type="button" data-theme-toggle aria-label="Switch to dark theme">
+                    <span class="theme-toggle__sun" aria-hidden="true">☼</span>
+                    <span class="theme-toggle__moon" aria-hidden="true">☾</span>
+                </button>
+                <button class="button button--accent" type="button" data-open-contact>
+                    <span>Start a project</span><span class="arrow" aria-hidden="true">↗</span>
+                </button>
+                <button class="icon-button menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+                    <span class="menu-toggle__lines" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <aside class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+        <div class="mobile-menu__inner">
+            <nav class="mobile-menu__nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Studio</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="pricing.html" aria-current="page">Pricing</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu__footer">
+                <a href="mailto:hello@interno.studio">hello@interno.studio</a>
+                <button class="text-link" type="button" data-open-contact>Start a project <span class="arrow" aria-hidden="true">↗</span></button>
+            </div>
+        </div>
+    </aside>
+
+    <main id="content">
+        <section class="page-hero page-hero--pricing" aria-labelledby="page-title">
+            <div class="page-hero__media" aria-hidden="true"></div>
+            <div class="shell page-hero__content">
+                <div>
+                    <nav class="page-hero__crumb" aria-label="Breadcrumb">
+                        <a href="index.html">Home</a><span aria-hidden="true">/</span><span>Pricing</span>
+                    </nav>
+                    <h1 class="display" id="page-title">Clear starting points for a beautifully resolved <em>home.</em></h1>
+                </div>
+                <span class="page-hero__index" aria-hidden="true">05</span>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="packages-title">
+            <div class="shell">
+                <div class="section-head section-head--center">
+                    <p class="eyebrow" data-reveal>Project packages</p>
+                    <h2 class="heading" id="packages-title" data-reveal data-delay="70">Choose a scope, then make it <em>yours.</em></h2>
+                    <p class="section-copy" data-reveal data-delay="140">
+                        These packages create a useful starting point. After a discovery call, we confirm the exact scope, schedule and fixed design fee for your space.
+                    </p>
+                </div>
+
+                <div class="package-grid">
+                    <article class="package-card" data-reveal>
+                        <p class="package-card__eyebrow">Concept & direction</p>
+                        <h3 class="package-card__price"><small>Starting at</small>$2,900</h3>
+                        <p class="package-card__description">A focused design blueprint for one room when you want expert clarity and plan to execute independently.</p>
+                        <ul class="package-card__list">
+                            <li>90-minute discovery session</li>
+                            <li>Furniture and circulation plan</li>
+                            <li>Creative direction moodboard</li>
+                            <li>Color and material palette</li>
+                            <li>Curated shopping shortlist</li>
+                            <li>One refinement round</li>
+                        </ul>
+                        <button class="button button--ghost" type="button" data-open-contact data-package="Concept & direction">
+                            <span>Choose concept</span><span class="arrow" aria-hidden="true">↗</span>
+                        </button>
+                    </article>
+
+                    <article class="package-card package-card--featured" data-reveal data-delay="90">
+                        <span class="package-card__badge">Most popular</span>
+                        <p class="package-card__eyebrow">Signature interior</p>
+                        <h3 class="package-card__price"><small>Starting at</small>$7,900</h3>
+                        <p class="package-card__description">A complete creative and technical design for one substantial room, ready for confident implementation.</p>
+                        <ul class="package-card__list">
+                            <li>Everything in Concept & direction</li>
+                            <li>Detailed layout and elevations</li>
+                            <li>Lighting and finish specification</li>
+                            <li>Bespoke joinery concept</li>
+                            <li>Furniture, textile and art curation</li>
+                            <li>3D views and two refinement rounds</li>
+                        </ul>
+                        <button class="button button--light" type="button" data-open-contact data-package="Signature interior">
+                            <span>Choose signature</span><span class="arrow" aria-hidden="true">↗</span>
+                        </button>
+                    </article>
+
+                    <article class="package-card" data-reveal data-delay="180">
+                        <p class="package-card__eyebrow">Full-service residence</p>
+                        <h3 class="package-card__price"><small>Tailored proposal</small>Custom</h3>
+                        <p class="package-card__description">End-to-end design leadership for renovations, new homes and multi-room transformations.</p>
+                        <ul class="package-card__list">
+                            <li>Whole-home design strategy</li>
+                            <li>Interior architecture package</li>
+                            <li>Kitchen, bath and custom joinery</li>
+                            <li>Furniture and art procurement</li>
+                            <li>Contractor and maker coordination</li>
+                            <li>Installation and final styling</li>
+                        </ul>
+                        <button class="button button--ghost" type="button" data-open-contact data-package="Full-service residence">
+                            <span>Request proposal</span><span class="arrow" aria-hidden="true">↗</span>
+                        </button>
+                    </article>
+                </div>
+
+                <p class="micro-copy" style="max-width: 740px; margin: 34px auto 0; text-align: center;">
+                    Design fees exclude furniture, materials, construction, third-party consultants, delivery and applicable taxes. All figures are portfolio examples and are confirmed in a project proposal.
+                </p>
+            </div>
+        </section>
+
+        <section class="section section--surface" aria-labelledby="compare-title">
+            <div class="shell">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow" data-reveal>At a glance</p>
+                        <h2 class="heading" id="compare-title" data-reveal data-delay="70">Compare the level of <em>support.</em></h2>
+                    </div>
+                    <p class="section-copy" data-reveal data-delay="140">
+                        If your project sits between packages, we will shape a hybrid scope after the discovery call.
+                    </p>
+                </div>
+
+                <div class="comparison-wrap" data-reveal>
+                    <table class="comparison">
+                        <thead>
+                            <tr>
+                                <th scope="col">Deliverable</th>
+                                <th scope="col">Concept</th>
+                                <th scope="col">Signature</th>
+                                <th scope="col">Full service</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Design direction & palette</td>
+                                <td class="yes">Included</td>
+                                <td class="yes">Included</td>
+                                <td class="yes">Included</td>
+                            </tr>
+                            <tr>
+                                <td>Furniture & circulation plan</td>
+                                <td class="yes">Included</td>
+                                <td class="yes">Included</td>
+                                <td class="yes">Included</td>
+                            </tr>
+                            <tr>
+                                <td>Detailed drawings & elevations</td>
+                                <td>—</td>
+                                <td class="yes">Included</td>
+                                <td class="yes">Included</td>
+                            </tr>
+                            <tr>
+                                <td>Kitchen, bath & joinery design</td>
+                                <td>—</td>
+                                <td>Optional</td>
+                                <td class="yes">Included</td>
+                            </tr>
+                            <tr>
+                                <td>Procurement management</td>
+                                <td>—</td>
+                                <td>Optional</td>
+                                <td class="yes">Included</td>
+                            </tr>
+                            <tr>
+                                <td>Installation & final styling</td>
+                                <td>—</td>
+                                <td>Optional</td>
+                                <td class="yes">Included</td>
+                            </tr>
+                            <tr>
+                                <td>Typical design timeline</td>
+                                <td>3–4 weeks</td>
+                                <td>6–10 weeks</td>
+                                <td>Tailored</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="faq-title">
+            <div class="shell">
+                <div class="section-head section-head--center">
+                    <p class="eyebrow" data-reveal>Good to know</p>
+                    <h2 class="heading" id="faq-title" data-reveal data-delay="70">Questions before we <em>begin.</em></h2>
+                </div>
+
+                <div class="faq-list" data-reveal>
+                    <details class="faq-item">
+                        <summary>How do we know which package is right?</summary>
+                        <p>Tell us the number of rooms, whether construction is involved and how much implementation support you want. We will recommend the smallest scope that can achieve the result well.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Are furniture and construction included in the fee?</summary>
+                        <p>No. Package prices cover Interno's design services. Furniture, materials, trades, specialist consultants, freight and taxes are budgeted separately and approved by you before purchase.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Can you work with clients outside New York?</summary>
+                        <p>Yes. Concept and signature projects can be delivered remotely. Full-service residences are considered by location, scope and the availability of a trusted local contractor.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>What happens after I submit an enquiry?</summary>
+                        <p>We review the project details and reply with availability within two business days. If the fit looks promising, we schedule a short discovery call before preparing a formal proposal.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Can the scope change after we begin?</summary>
+                        <p>Yes, with a written scope adjustment. We explain the effect on design fees and timing before any additional work starts, so there are no surprise invoices.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--compact">
+            <div class="shell">
+                <div class="cta" data-reveal="scale">
+                    <div class="cta__inner">
+                        <div class="cta__copy">
+                            <p class="eyebrow eyebrow--light">A tailored starting point</p>
+                            <h2 class="heading">Have a project that does not fit neatly in a package?</h2>
+                            <p>That is normal. Share the essentials and we will shape the right scope around your home.</p>
+                        </div>
+                        <button class="button button--light" type="button" data-open-contact>
+                            <span>Request a custom scope</span><span class="arrow" aria-hidden="true">↗</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="shell site-footer__main">
+            <div class="site-footer__brand">
+                <a class="brand" href="index.html" aria-label="Interno home">
+                    <span class="brand__mark"><img src="img/Logo.png" width="34" height="34" alt=""></span>
+                    <span class="brand__name">Interno</span>
+                </a>
+                <p>Interior architecture and design for homes with character, clarity and a lasting sense of ease.</p>
+                <div class="social-links" aria-label="Social media">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">IG</a>
+                    <a href="https://www.pinterest.com/" target="_blank" rel="noreferrer" aria-label="Pinterest">PI</a>
+                    <a href="https://www.behance.net/" target="_blank" rel="noreferrer" aria-label="Behance">BE</a>
+                </div>
+            </div>
+            <div class="site-footer__column">
+                <h2>Explore</h2>
+                <nav>
+                    <a href="about.html">The studio</a>
+                    <a href="services.html">Our services</a>
+                    <a href="index.html#projects">Selected work</a>
+                    <a href="pricing.html">Project packages</a>
+                </nav>
+            </div>
+            <div class="site-footer__column">
+                <h2>Services</h2>
+                <nav>
+                    <a href="services.html#strategy">Design strategy</a>
+                    <a href="services.html#design">Interior architecture</a>
+                    <a href="services.html#delivery">Project delivery</a>
+                    <a href="services-single.html">Signature service</a>
+                </nav>
+            </div>
+            <div class="site-footer__column">
+                <h2>Visit & contact</h2>
+                <address>
+                    <span>55 East Birchwood Ave.<br>Brooklyn, NY 11201</span>
+                    <a href="mailto:hello@interno.studio">hello@interno.studio</a>
+                    <a href="tel:+12125550128">+1 212 555 0128</a>
+                </address>
+            </div>
+        </div>
+        <div class="shell site-footer__bottom">
+            <p>© <span data-current-year>2026</span> Interno Studio. Portfolio concept.</p>
+            <nav aria-label="Footer links">
+                <a href="#top">Back to top ↑</a>
+                <button class="text-link" type="button" data-open-contact>Project enquiry ↗</button>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

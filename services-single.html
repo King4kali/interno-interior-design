@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Discover Interno's signature full-service interior design engagement, including strategy, interior architecture, visualisation, procurement and installation.">
+    <meta name="theme-color" content="#f8f6f1">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Signature Interior Service — Interno">
+    <meta property="og:description" content="One studio, one clear process and every detail carried from concept to completion.">
+    <meta property="og:image" content="img/og-interno.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Signature Interior Service — Interno</title>
+    <link rel="icon" type="image/png" href="img/Logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        const root = document.documentElement;
+        root.classList.add("js");
+        let motionEnabled = true;
+
+        try {
+            if (localStorage.getItem("interno-theme") === "dark") {
+                root.dataset.theme = "dark";
+            }
+            motionEnabled = localStorage.getItem("interno-motion") !== "off";
+        } catch {}
+
+        try {
+            if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+                motionEnabled = false;
+            }
+        } catch {}
+
+        root.dataset.motion = motionEnabled ? "on" : "off";
+    </script>
+    <script src="js/script.js?v=20260730-3" defer></script>
+</head>
+<body class="has-dark-hero" id="top">
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a class="brand" href="index.html" aria-label="Interno home">
+                <span class="brand__mark"><img src="img/Logo.png" width="34" height="34" alt=""></span>
+                <span>
+                    <span class="brand__name">Interno</span>
+                    <span class="brand__descriptor">Interior architecture</span>
+                </span>
+            </a>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">Studio</a>
+                <a href="services.html" aria-current="page">Services</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="pricing.html">Pricing</a>
+            </nav>
+            <div class="header-actions">
+                <button class="icon-button" type="button" data-open-search aria-label="Search site" title="Search (/)">⌕</button>
+                <button class="icon-button" type="button" data-theme-toggle aria-label="Switch to dark theme">
+                    <span class="theme-toggle__sun" aria-hidden="true">☼</span>
+                    <span class="theme-toggle__moon" aria-hidden="true">☾</span>
+                </button>
+                <button class="button button--accent" type="button" data-open-contact>
+                    <span>Start a project</span><span class="arrow" aria-hidden="true">↗</span>
+                </button>
+                <button class="icon-button menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+                    <span class="menu-toggle__lines" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <aside class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+        <div class="mobile-menu__inner">
+            <nav class="mobile-menu__nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Studio</a></li>
+                    <li><a href="services.html" aria-current="page">Services</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu__footer">
+                <a href="mailto:hello@interno.studio">hello@interno.studio</a>
+                <button class="text-link" type="button" data-open-contact>Start a project <span class="arrow" aria-hidden="true">↗</span></button>
+            </div>
+        </div>
+    </aside>
+
+    <main id="content">
+        <section class="page-hero page-hero--single" aria-labelledby="page-title">
+            <div class="page-hero__media" aria-hidden="true"></div>
+            <div class="shell page-hero__content">
+                <div>
+                    <nav class="page-hero__crumb" aria-label="Breadcrumb">
+                        <a href="index.html">Home</a><span aria-hidden="true">/</span>
+                        <a href="services.html">Services</a><span aria-hidden="true">/</span>
+                        <span>Signature interior</span>
+                    </nav>
+                    <h1 class="display" id="page-title">One vision, carried all the way <em>home.</em></h1>
+                </div>
+                <span class="page-hero__index" aria-hidden="true">04</span>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="service-title">
+            <div class="shell service-intro">
+                <div class="service-intro__lead">
+                    <p class="eyebrow" data-reveal>Signature service</p>
+                    <h2 class="heading" id="service-title" data-reveal data-delay="70">Full-service design for a home that feels <em>completely resolved.</em></h2>
+                </div>
+                <div class="service-intro__copy">
+                    <p data-reveal>
+                        From spatial strategy to the last object on the shelf, one close-knit team protects the idea and coordinates every visible decision.
+                    </p>
+                    <p data-reveal data-delay="90">
+                        This is our most complete engagement for renovations, new homes and multi-room transformations. We develop the interior architecture, select finishes and fixtures, design bespoke joinery, curate furniture and art, manage procurement and shape the final installation.
+                    </p>
+                    <p data-reveal data-delay="180">
+                        You receive one clear point of contact, structured reviews and a visual project workspace. The process is collaborative, but never chaotic: we present decisions in the right order and keep the whole home in view.
+                    </p>
+                    <button class="button button--accent" type="button" data-open-contact data-package="Full-service residence" data-reveal data-delay="240">
+                        <span>Discuss your residence</span><span class="arrow" aria-hidden="true">↗</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <div class="section--surface">
+            <div class="shell client-strip" aria-label="Selected collaborators">
+                <img src="img/01.png" width="132" height="44" alt="Modern Home partner mark" loading="lazy">
+                <img src="img/02.jpg" width="103" height="103" alt="Nature Home partner mark" loading="lazy">
+                <img src="img/03.jpg" width="164" height="44" alt="Brand Studio partner mark" loading="lazy">
+                <img src="img/04.jpg" width="146" height="45" alt="Architecture partner mark" loading="lazy">
+                <img src="img/05.jpg" width="118" height="48" alt="Classic Design partner mark" loading="lazy">
+            </div>
+        </div>
+
+        <section class="section" id="walkthrough" aria-labelledby="walkthrough-title">
+            <div class="shell">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow" data-reveal>Visualise before building</p>
+                        <h2 class="heading" id="walkthrough-title" data-reveal data-delay="70">Step inside the idea before it becomes <em>real.</em></h2>
+                    </div>
+                    <p class="section-copy" data-reveal data-delay="140">
+                        Our 3D walkthroughs make proportion, light and material relationships tangible early enough to refine them with confidence.
+                    </p>
+                </div>
+
+                <figure class="video-shell" data-reveal="scale">
+                    <video id="project-video" preload="none" muted playsinline poster="img/walkthrough-poster.webp" aria-label="Silent 3D walkthrough of a contemporary Interno interior">
+                        <source src="video/interno-walkthrough.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                    <button class="video-shell__overlay" type="button" aria-label="Play the 3D interior walkthrough">
+                        <span class="video-shell__play" aria-hidden="true">▶</span>
+                    </button>
+                </figure>
+                <p class="micro-copy" style="margin-top: 14px;">3D design walkthrough · 02:11 · Presented without narration</p>
+            </div>
+        </section>
+
+        <section class="section section--surface" id="scope" aria-labelledby="scope-title">
+            <div class="shell">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow" data-reveal>Complete scope</p>
+                        <h2 class="heading" id="scope-title" data-reveal data-delay="70">Creative depth and technical clarity, <em>together.</em></h2>
+                    </div>
+                    <p class="section-copy" data-reveal data-delay="140">
+                        The exact deliverables respond to the project, but every full-service engagement covers these two essential layers.
+                    </p>
+                </div>
+
+                <div class="scope-grid">
+                    <article class="scope-card" data-reveal>
+                        <p class="eyebrow">Interior architecture</p>
+                        <h3 class="subheading">The space itself</h3>
+                        <ol>
+                            <li>Measured review and spatial planning</li>
+                            <li>Concept direction and material palette</li>
+                            <li>Lighting, electrical and reflected ceiling plans</li>
+                            <li>Kitchen, bathroom and bespoke joinery design</li>
+                            <li>Finish, fixture and hardware specifications</li>
+                        </ol>
+                    </article>
+                    <article class="scope-card" data-reveal data-delay="90">
+                        <p class="eyebrow">Furniture & styling</p>
+                        <h3 class="subheading">The life within it</h3>
+                        <ol>
+                            <li>Furniture layouts and curated selections</li>
+                            <li>Custom pieces and vintage sourcing</li>
+                            <li>Window treatments, rugs and textiles</li>
+                            <li>Art, lighting and decorative object curation</li>
+                            <li>Delivery coordination and final installation</li>
+                        </ol>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="delivery" aria-labelledby="delivery-title">
+            <div class="shell split-feature">
+                <figure class="split-feature__media" data-image-reveal>
+                    <img src="img/material-detail.webp" width="600" height="377" alt="Serene completed living space layered with natural textures" loading="lazy" decoding="async">
+                </figure>
+                <div class="split-feature__content">
+                    <p class="eyebrow" data-reveal>From paper to place</p>
+                    <h2 class="heading" id="delivery-title" data-reveal data-delay="70">The details stay connected to the <em>big idea.</em></h2>
+                    <p class="section-copy" data-reveal data-delay="140">
+                        During delivery, we answer maker questions, review samples, coordinate procurement and check every installation against the design. Nothing is selected in isolation, and nothing important is left to chance.
+                    </p>
+                    <div class="feature-points" data-reveal data-delay="210">
+                        <p class="feature-point">Regular coordination with your contractor and trades</p>
+                        <p class="feature-point">Procurement schedule and investment tracking</p>
+                        <p class="feature-point">Installation, styling and a composed final handover</p>
+                    </div>
+                    <a class="text-link" href="pricing.html" style="margin-top: 31px;" data-reveal data-delay="270">
+                        Explore investment levels <span class="arrow" aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="metrics section--compact" aria-label="Service outcomes">
+            <div class="shell metrics__grid">
+                <div class="metric"><strong data-counter="1" data-suffix="">0</strong><span>Dedicated project lead</span></div>
+                <div class="metric"><strong data-counter="4" data-suffix="">0</strong><span>Structured design phases</span></div>
+                <div class="metric"><strong data-counter="95" data-suffix="">0</strong><span>Homes delivered</span></div>
+                <div class="metric"><strong data-counter="98" data-suffix="%">0</strong><span>Client referral rate</span></div>
+            </div>
+        </section>
+
+        <section class="section section--compact">
+            <div class="shell">
+                <div class="cta" data-reveal="scale">
+                    <div class="cta__inner">
+                        <div class="cta__copy">
+                            <p class="eyebrow eyebrow--light">A home, fully considered</p>
+                            <h2 class="heading">Could our signature service be the right fit?</h2>
+                            <p>Share your location, scope and ideal timing. We will respond with availability and a clear recommendation.</p>
+                        </div>
+                        <button class="button button--light" type="button" data-open-contact data-package="Full-service residence">
+                            <span>Start the conversation</span><span class="arrow" aria-hidden="true">↗</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="shell site-footer__main">
+            <div class="site-footer__brand">
+                <a class="brand" href="index.html" aria-label="Interno home">
+                    <span class="brand__mark"><img src="img/Logo.png" width="34" height="34" alt=""></span>
+                    <span class="brand__name">Interno</span>
+                </a>
+                <p>Interior architecture and design for homes with character, clarity and a lasting sense of ease.</p>
+                <div class="social-links" aria-label="Social media">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">IG</a>
+                    <a href="https://www.pinterest.com/" target="_blank" rel="noreferrer" aria-label="Pinterest">PI</a>
+                    <a href="https://www.behance.net/" target="_blank" rel="noreferrer" aria-label="Behance">BE</a>
+                </div>
+            </div>
+            <div class="site-footer__column">
+                <h2>Explore</h2>
+                <nav>
+                    <a href="about.html">The studio</a>
+                    <a href="services.html">Our services</a>
+                    <a href="index.html#projects">Selected work</a>
+                    <a href="pricing.html">Project packages</a>
+                </nav>
+            </div>
+            <div class="site-footer__column">
+                <h2>Services</h2>
+                <nav>
+                    <a href="services.html#strategy">Design strategy</a>
+                    <a href="services.html#design">Interior architecture</a>
+                    <a href="services.html#delivery">Project delivery</a>
+                    <a href="services-single.html">Signature service</a>
+                </nav>
+            </div>
+            <div class="site-footer__column">
+                <h2>Visit & contact</h2>
+                <address>
+                    <span>55 East Birchwood Ave.<br>Brooklyn, NY 11201</span>
+                    <a href="mailto:hello@interno.studio">hello@interno.studio</a>
+                    <a href="tel:+12125550128">+1 212 555 0128</a>
+                </address>
+            </div>
+        </div>
+        <div class="shell site-footer__bottom">
+            <p>© <span data-current-year>2026</span> Interno Studio. Portfolio concept.</p>
+            <nav aria-label="Footer links">
+                <a href="#top">Back to top ↑</a>
+                <button class="text-link" type="button" data-open-contact>Project enquiry ↗</button>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
